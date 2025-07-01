@@ -1,2 +1,2 @@
 # RoboticArm
-Built a 6 dof robotic arm from scratch and derived an inverse kinematic model to control it
+Built a 6 degree of freedom robotic arm and implemented invese kinematics to control its movements. 
