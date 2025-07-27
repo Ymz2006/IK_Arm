@@ -55,13 +55,11 @@ def plot_coordinate_frame(ax, origin, rotation_matrix, num, length=0.1):
 
 
 def get_hypotenuse(a, b):
-    # calculate the longest side given the two shorter sides
-    # of a right triangle using pythagorean theorem
+
     return math.sqrt(a * a + b * b)
 
 def get_cosine_law_angle(a, b, c):
-    # given all sides of a triangle a, b, c
-    # calculate angle gamma between sides a and b
+
     cos_gamma = (a*a + b*b - c*c) / (2*a*b)
     sin_gamma = math.sqrt(1 - cos_gamma * cos_gamma)
     gamma = math.atan2(sin_gamma, cos_gamma)
@@ -69,7 +67,7 @@ def get_cosine_law_angle(a, b, c):
 
 
 
-mpl.use('TkAgg')  # or can use 'TkAgg', whatever you have/prefer
+mpl.use('TkAgg')  
 theta1 = sp.Symbol('t1')
 theta2 = sp.Symbol('t2')
 theta3 = sp.Symbol('t3')
